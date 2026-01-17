@@ -35,13 +35,12 @@ def hog_extract_features(img_path):
 
 def lbp_extract_features(img_path):
      # Load and Resize
-    image = cv2.imread(img_path)    
-    image = cv2.resize(image, IMAGE_SIZE)    
+    image = cv2.imread(img_path)        
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    # LBP Features (Uniform Histogram)
-    lbp = local_binary_pattern(gray, P=8, R=1, method='uniform')
-    lbp_hist, _ = np.histogram(lbp.ravel(), bins=np.arange(0, 11), density=True)
+    # LBP Features (Histogram)
+    lbp = local_binary_pattern(gray, P=8, R=2, method='nri_uniform')
+    lbp_hist, _ = np.histogram(lbp.ravel(), bins=np.arange(0, 60), density=True)
 
     # Combine all into 1D array
     return np.concatenate([lbp_hist])
@@ -103,4 +102,5 @@ for fol in FOLDER_PATH:
         gabor=np.array(gabor_list),
         filenames=np.array(names_list)
     )
+
     print(f"Success! Saved data for {len(names_list)} images.")
