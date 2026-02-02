@@ -35,7 +35,8 @@ def hog_extract_features(img_path):
 
 def lbp_extract_features(img_path):
      # Load and Resize
-    image = cv2.imread(img_path)        
+    image = cv2.imread(img_path)   
+    image = cv2.resize(image, IMAGE_SIZE)             
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # LBP Features (Histogram)
