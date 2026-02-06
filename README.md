@@ -25,7 +25,8 @@ The Python Modules:
 
 
 # Authors
-Name	Registration number
-Aristotelis Garro MTN 2503
-Konstantinos Dimopoulos MTN 2507
-Apostolos Stavrou MTN 2526
+| Name | Registration number |
+| ------ | ------ |
+| Aristotelis Garro | MTN 2503 |
+| Konstantinos Dimopoulos | MTN 2507 |
+| Apostolos Stavrou | MTN 2526 |
