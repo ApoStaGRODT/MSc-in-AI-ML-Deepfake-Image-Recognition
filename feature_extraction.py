@@ -45,6 +45,14 @@ FOLDER_PATH = [
     {
         'load': source_path / 'test/real',
         'save': output_path / 'test/real/test_real_all_features.npz'
+    },
+    {
+        'load': source_path / 'test_cross/fake',
+        'save': output_path / 'test_cross/fake/test_cross_fake_all_features.npz'
+    },
+    {
+        'load': source_path / 'test_cross/real',
+        'save': output_path / 'test_cross/real/test_cross_real_all_features.npz'
     }
 ]
 
