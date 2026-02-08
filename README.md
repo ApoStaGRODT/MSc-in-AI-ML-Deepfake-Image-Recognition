@@ -13,15 +13,11 @@ Dataset - https://drive.google.com/drive/folders/1_GpcTdbkfQIUWUn7qqGvlraRaERJ_8
 
 Features - https://drive.google.com/file/d/1ckZut_96DVENH44Am_uf05ECEnjAgwpH/view?usp=drive_link
 
-requirements.txt - Requirements.
+Requirements - RequiredLibraries.txt
 
-notebooks - Folder that includes:
+Results - Results organized in excel sheets, along with models, scalers, features in .joblib files
 
-The Jupyter Notebooks:
-   * Their description
-
-The Python Modules:
-   * The modules
+Notebooks - Folder that includes jupyter notebook and python modules
 
 
 # Authors
