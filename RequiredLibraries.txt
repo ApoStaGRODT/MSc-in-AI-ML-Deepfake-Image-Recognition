@@ -1,0 +1,17 @@
+Required libraries:
+
+pandas
+
+numpy
+
+sklearn
+
+skimage
+
+matplotlib
+
+joblib
+
+argparse
+
+time
